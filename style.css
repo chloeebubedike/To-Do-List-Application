@@ -6,7 +6,16 @@ body{
     background: linear-gradient(
         -135deg,
         #8052ec,
-        #d161ff
+        #d161ff,
+        #fa61ff
 
     )
+}
+
+.container{
+    height: 100px;
+    width: 500px;
+    padding: 50px;
+    opacity: 0.85;
+    background-color: white;
 }
