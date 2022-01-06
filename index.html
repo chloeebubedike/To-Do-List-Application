@@ -4,8 +4,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="/style.css" rel="stylesheet">
+    <link href="/script.js" rel="stylesheet">
     <title>To Do List</title>
+
 </head>
+
+
 
 <body>
     <!--Create div for the user input-->
@@ -14,9 +18,18 @@
         <form>
             <label for="to-do"> I need to: </label>
             <input type="text" id="to-do" name="to-do" value="add an item">
-            <input type="submit" value = "Submit" id="submit">
+            <button type="submit" id="submit"> Submit </button>
         </form>
 
+    </div>
+
+    <!--Create div for to do list-->
+
+    <div class="container" >
+        <ul>
+            <li id="addList" >
+            </li>
+        </ul>
     </div>
 
 </body>
