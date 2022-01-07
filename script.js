@@ -1,10 +1,13 @@
 // Get input value after user clicks on submit button
 
-document.getElementById("submit").addEventListener("click", function addToList(){
-    document.getElementById("addList").innerHTML = "Hello World";
 
+const submitButton = document.querySelector("#submit");
+
+submitButton.addEventListener('click', sayHello)
+
+function sayHello(){
+  const inputValue = document.getElementById("input").value
+  document.querySelector("#addList").append(inputValue)
+  
+  console.log("Hello")
 }
-);
-
-const body = document.body
-body.append("Hello World")
