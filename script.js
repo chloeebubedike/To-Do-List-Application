@@ -1,5 +1,4 @@
 // Get input value after user clicks on submit button
-//Test code 
 
 function newTask(){
   let li = document.createElement("li");
@@ -16,25 +15,39 @@ function newTask(){
   let span = document.createElement("SPAN");
   let txt = document.createTextNode("\u00D7");
   span.className = "closeButton";
-  span.appendChild(text);
+  span.appendChild(txt);
   li.appendChild(span);
 
+  for(i = 0; i < close.lenghth; i++){
+    close[i].onclick = function(){
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+
+
+
 }
 
+// Delete the task - add onclick to close
 
 
-///
-/*
-const submitButton = document.querySelector("#submit");
 
-submitButton.addEventListener('click', sayHello)
 
-function sayHello(){
-  const inputValue = document.getElementById("input").value
-  document.getElementById("#addList").textContent(inputValue)
-  
-  console.log("Hello")
+// Cross out the completed task
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
 }
 
-*/
+// Clear the input field after each submission
+
+
+//Clear the whole task list
+
 
