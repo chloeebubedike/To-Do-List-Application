@@ -10,23 +10,22 @@
 </head>
 
 
-
 <body>
     <!--Create div for the user input-->
-    <div class="container">
+    <div id="myDIV" class="container header">
         <h1> To-Do List</h1>
         <form>
             <label for="to-do"> I need to: </label>
-            <input type="text" id="input" name="input" value="add an item">
-            <button type="submit" id="submit"> Submit </button>
+            <input type="text" id="input" name="input" placeholder="Add a new task here...">
+            <span onclick="newTask()" class="addBtn" type="submit" id="submit"> Submit </span>
         </form>
 
     </div>
 
     <!--Create div for to do list-->
 
-    <div class="container" >
-        <ul>
+    <div class="container" id="tasks" >
+        <ul id="myUL">
             <li id="addList" >
             </li>
         </ul>
